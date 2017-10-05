@@ -1,15 +1,8 @@
 package task4;
 
 import java.util.*;
-import java.util.function.*;
-import java.util.stream.DoubleStream;
-import java.util.stream.IntStream;
-import java.util.stream.LongStream;
 import java.util.stream.Stream;
 
-/**
- * Created by 803019 on 04.10.2017.
- */
 public class Stream_Scanner {
     private Scanner scanner;
 

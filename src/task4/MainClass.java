@@ -1,13 +1,7 @@
 package task4;
 
 import java.util.Scanner;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
-/**
- * Created by 803019 on 04.10.2017.
- */
 public class MainClass {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

@@ -1,10 +1,5 @@
 package task2;
 
-
-/**
- * Created by 803019 on 03.10.2017.
- */
-
 // It works for lower case only. If it is necessary, I can do it for lower case too.
 public class ROT13 {
     public static void main(String[] args) {
