@@ -1,14 +1,12 @@
-package task5;
+package task6;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 
-/**
- * Created by 803019 on 07.10.2017.
- */
+
 public class CharSearch {
     public static void main(String[] args) throws Exception {
-        BufferedReader bufferedReader = new BufferedReader(new FileReader("src/task5/text.txt"));
+        BufferedReader bufferedReader = new BufferedReader(new FileReader("src/task6/text.txt"));
         int counter = 0;
 
         while (bufferedReader.ready()) {
