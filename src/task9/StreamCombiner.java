@@ -15,9 +15,9 @@ public class StreamCombiner {
         Object[] firstArray = first.toArray();
         Object[] secondArray = second.toArray();
         Object[] resultArray = new Object[Math.min(firstArray.length, secondArray.length) * 2];
-        for (int i = 0, j = 0; i < resultArray.length - 1 && j < Math.min(firstArray.length, secondArray.length); i += 2, j++) {
-            resultArray[i] = firstArray[j];
-            resultArray[i + 1] = secondArray[j];
+        for (int i = 0, j = 0; i < resultArray.length - 1 && j < Math.min(firstArray.length, secondArray.length); j++) {
+            resultArray[i++] = firstArray[j];
+            resultArray[i++] = secondArray[j];
         }
         return Arrays.stream(resultArray);
     }
