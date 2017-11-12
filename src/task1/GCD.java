@@ -28,7 +28,7 @@ public class GCD {
     public static int gcd_one(int a, int b) {
         while (b != 0) {
             int c = b;
-            b = a % b;
+            b = remainder(a, b);
             a = c;
         }
         return a;
@@ -44,6 +44,19 @@ public class GCD {
     }
     public static int gcd_rem(int a, int b) {
         if (b == 0) return a;
-        else return gcd_rem(b, a % b);
+        else return (Math.abs(a) >= Math.abs(b))? gcd_rem(b, remainder(a, b)) : gcd_rem(a, remainder(b, a));
+    }
+
+    public static int remainder(int a, int b) {
+        if (b < 0) {
+            return remainder(a, -b);
+        }
+        if (a < 0) {
+            return remainder(-a, b);
+        }
+        while (a >= b) {
+            a = a - b;
+        }
+        return a;
     }
 }
